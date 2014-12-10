@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SHKWheelyObject : NSObject
+@interface SHKWheelyStory : NSObject
+@property (strong, nonatomic) NSString *storyId;
+@property (strong, nonatomic) NSString *text;
+@property (strong, nonatomic) NSString *title;
 
+- (id)initWithStoryId:(NSString *)storyId
+                 text:(NSString *)text
+                title:(NSString *)title;
 @end

@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SHKWheelyAPIManager : NSObject
+@protocol SHKWheelyAPIManager <NSObject>
+- (void)willStartRefresh;
+- (void)storiesDidUpdate;
+- (void)refreshDidFailWithError:(NSError *)error;
+@end
 
+@interface SHKWheelyAPIManager : NSObject
+@property (weak, nonatomic) id<SHKWheelyAPIManager> delegate;
+@property (strong, nonatomic) NSArray *stories;
+
+- (void)refresh;
 @end

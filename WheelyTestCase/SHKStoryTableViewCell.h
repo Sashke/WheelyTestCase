@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SHKStoryTableViewCell : UITableViewCell
-
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *text;
 @end

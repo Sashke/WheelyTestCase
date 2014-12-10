@@ -7,43 +7,23 @@
 //
 
 #import "SHKStoryDetailViewController.h"
+#import "SHKWheelyStory.h"
 
 @interface SHKStoryDetailViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *storyTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *storyTextLabel;
 @end
 
 @implementation SHKStoryDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSString *navBarTitle = [NSString stringWithFormat:@"%@%@",
+                             [[self.story.title substringToIndex:1] uppercaseString],
+                             [self.story.title substringFromIndex:1]];
+    self.title = navBarTitle;
+    self.storyTitleLabel.text = self.story.title;
+    self.storyTextLabel.text = self.story.text;
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

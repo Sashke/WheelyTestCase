@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SHKWheelyStory;
 
 @interface SHKStoryDetailViewController : UIViewController
-
+@property (strong, nonatomic) SHKWheelyStory *story;
 @end

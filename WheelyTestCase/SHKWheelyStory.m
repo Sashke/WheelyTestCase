@@ -6,8 +6,19 @@
 //  Copyright (c) 2014 Alexander Rubin. All rights reserved.
 //
 
-#import "SHKWheelyObject.h"
+#import "SHKWheelyStory.h"
 
-@implementation SHKWheelyObject
+@implementation SHKWheelyStory
+
+- (id)initWithStoryId:(NSString *)storyId
+                 text:(NSString *)text
+                title:(NSString *)title {
+    if (self == [super init]) {
+        _storyId = storyId;
+        _text = text;
+        _title = title;
+    }
+    return self;
+}
 
 @end

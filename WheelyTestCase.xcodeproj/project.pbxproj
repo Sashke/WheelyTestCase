@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4787B3B1A38E45600506608 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4787B3A1A38E45600506608 /* Launch Screen.xib */; };
 		A495736A1A385DD80026C0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573691A385DD80026C0B4 /* Foundation.framework */; };
 		A495736C1A385DD80026C0B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736B1A385DD80026C0B4 /* CoreGraphics.framework */; };
 		A495736E1A385DD80026C0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736D1A385DD80026C0B4 /* UIKit.framework */; };
@@ -14,26 +15,21 @@
 		A49573761A385DD80026C0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573751A385DD80026C0B4 /* main.m */; };
 		A495737A1A385DD80026C0B4 /* SHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573791A385DD80026C0B4 /* SHKAppDelegate.m */; };
 		A495737D1A385DD80026C0B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A495737B1A385DD80026C0B4 /* Main.storyboard */; };
-		A49573801A385DD80026C0B4 /* SHKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A495737F1A385DD80026C0B4 /* SHKViewController.m */; };
 		A49573821A385DD80026C0B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49573811A385DD80026C0B4 /* Images.xcassets */; };
-		A49573891A385DD80026C0B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573881A385DD80026C0B4 /* XCTest.framework */; };
-		A495738A1A385DD80026C0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573691A385DD80026C0B4 /* Foundation.framework */; };
-		A495738B1A385DD80026C0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736D1A385DD80026C0B4 /* UIKit.framework */; };
-		A49573931A385DD80026C0B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A49573911A385DD80026C0B4 /* InfoPlist.strings */; };
-		A49573951A385DD80026C0B4 /* WheelyTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */; };
+		A49573A31A385F730026C0B4 /* SHKRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573A21A385F730026C0B4 /* SHKRequestOperation.m */; };
+		A49573A61A3860340026C0B4 /* SHKWheelyAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573A51A3860340026C0B4 /* SHKWheelyAPIManager.m */; };
+		A49573AA1A3862330026C0B4 /* SHKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573A91A3862320026C0B4 /* SHKMainViewController.m */; };
+		A49573AF1A3863D90026C0B4 /* SHKWheelyStory.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573AE1A3863D90026C0B4 /* SHKWheelyStory.m */; };
+		A49573B21A3864B60026C0B4 /* SHKJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573B11A3864B60026C0B4 /* SHKJSONParser.m */; };
+		A49573B81A386C170026C0B4 /* SHKStoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573B71A386C170026C0B4 /* SHKStoryTableViewCell.m */; };
+		A49573BB1A3870D40026C0B4 /* SHKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573BA1A3870D40026C0B4 /* SHKLabel.m */; };
+		A49573C41A3875430026C0B4 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573C21A3875430026C0B4 /* UIScrollView+SVPullToRefresh.m */; };
+		A49573C81A3883750026C0B4 /* SHKStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573C71A3883750026C0B4 /* SHKStoryDetailViewController.m */; };
+		A49573CB1A38C44F0026C0B4 /* SHKSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573CA1A38C44F0026C0B4 /* SHKSeparatorView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A495738C1A385DD80026C0B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A495735E1A385DD80026C0B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A49573651A385DD80026C0B4;
-			remoteInfo = WheelyTestCase;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		A4787B3A1A38E45600506608 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		A49573661A385DD80026C0B4 /* WheelyTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49573691A385DD80026C0B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A495736B1A385DD80026C0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +41,27 @@
 		A49573781A385DD80026C0B4 /* SHKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKAppDelegate.h; sourceTree = "<group>"; };
 		A49573791A385DD80026C0B4 /* SHKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKAppDelegate.m; sourceTree = "<group>"; };
 		A495737C1A385DD80026C0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A495737E1A385DD80026C0B4 /* SHKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKViewController.h; sourceTree = "<group>"; };
-		A495737F1A385DD80026C0B4 /* SHKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKViewController.m; sourceTree = "<group>"; };
 		A49573811A385DD80026C0B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A49573881A385DD80026C0B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A49573901A385DD80026C0B4 /* WheelyTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WheelyTestCaseTests-Info.plist"; sourceTree = "<group>"; };
-		A49573921A385DD80026C0B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelyTestCaseTests.m; sourceTree = "<group>"; };
+		A49573A11A385F730026C0B4 /* SHKRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKRequestOperation.h; sourceTree = "<group>"; };
+		A49573A21A385F730026C0B4 /* SHKRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKRequestOperation.m; sourceTree = "<group>"; };
+		A49573A41A3860340026C0B4 /* SHKWheelyAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKWheelyAPIManager.h; sourceTree = "<group>"; };
+		A49573A51A3860340026C0B4 /* SHKWheelyAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKWheelyAPIManager.m; sourceTree = "<group>"; };
+		A49573A81A3862320026C0B4 /* SHKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKMainViewController.h; sourceTree = "<group>"; };
+		A49573A91A3862320026C0B4 /* SHKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKMainViewController.m; sourceTree = "<group>"; };
+		A49573AD1A3863D90026C0B4 /* SHKWheelyStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKWheelyStory.h; sourceTree = "<group>"; };
+		A49573AE1A3863D90026C0B4 /* SHKWheelyStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKWheelyStory.m; sourceTree = "<group>"; };
+		A49573B01A3864B60026C0B4 /* SHKJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKJSONParser.h; sourceTree = "<group>"; };
+		A49573B11A3864B60026C0B4 /* SHKJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKJSONParser.m; sourceTree = "<group>"; };
+		A49573B61A386C170026C0B4 /* SHKStoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKStoryTableViewCell.h; sourceTree = "<group>"; };
+		A49573B71A386C170026C0B4 /* SHKStoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKStoryTableViewCell.m; sourceTree = "<group>"; };
+		A49573B91A3870D40026C0B4 /* SHKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLabel.h; sourceTree = "<group>"; };
+		A49573BA1A3870D40026C0B4 /* SHKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLabel.m; sourceTree = "<group>"; };
+		A49573C11A3875430026C0B4 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		A49573C21A3875430026C0B4 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		A49573C61A3883750026C0B4 /* SHKStoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKStoryDetailViewController.h; sourceTree = "<group>"; };
+		A49573C71A3883750026C0B4 /* SHKStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKStoryDetailViewController.m; sourceTree = "<group>"; };
+		A49573C91A38C44F0026C0B4 /* SHKSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKSeparatorView.h; sourceTree = "<group>"; };
+		A49573CA1A38C44F0026C0B4 /* SHKSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKSeparatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,24 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A49573841A385DD80026C0B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A49573891A385DD80026C0B4 /* XCTest.framework in Frameworks */,
-				A495738B1A385DD80026C0B4 /* UIKit.framework in Frameworks */,
-				A495738A1A385DD80026C0B4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A495735D1A385DD80026C0B4 = {
 			isa = PBXGroup;
 			children = (
+				A49573BC1A3875360026C0B4 /* Dependencies */,
 				A495736F1A385DD80026C0B4 /* WheelyTestCase */,
-				A495738E1A385DD80026C0B4 /* WheelyTestCaseTests */,
 				A49573681A385DD80026C0B4 /* Frameworks */,
 				A49573671A385DD80026C0B4 /* Products */,
 			);
@@ -93,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				A49573661A385DD80026C0B4 /* WheelyTestCase.app */,
-				A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +102,6 @@
 				A49573691A385DD80026C0B4 /* Foundation.framework */,
 				A495736B1A385DD80026C0B4 /* CoreGraphics.framework */,
 				A495736D1A385DD80026C0B4 /* UIKit.framework */,
-				A49573881A385DD80026C0B4 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,13 +109,14 @@
 		A495736F1A385DD80026C0B4 /* WheelyTestCase */ = {
 			isa = PBXGroup;
 			children = (
+				A49573A71A38621A0026C0B4 /* Controllers */,
+				A495739E1A385E5A0026C0B4 /* Models */,
 				A49573781A385DD80026C0B4 /* SHKAppDelegate.h */,
 				A49573791A385DD80026C0B4 /* SHKAppDelegate.m */,
 				A495737B1A385DD80026C0B4 /* Main.storyboard */,
-				A495737E1A385DD80026C0B4 /* SHKViewController.h */,
-				A495737F1A385DD80026C0B4 /* SHKViewController.m */,
 				A49573811A385DD80026C0B4 /* Images.xcassets */,
 				A49573701A385DD80026C0B4 /* Supporting Files */,
+				A4787B3A1A38E45600506608 /* Launch Screen.xib */,
 			);
 			path = WheelyTestCase;
 			sourceTree = "<group>";
@@ -134,22 +132,117 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A495738E1A385DD80026C0B4 /* WheelyTestCaseTests */ = {
+		A495739E1A385E5A0026C0B4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */,
-				A495738F1A385DD80026C0B4 /* Supporting Files */,
+				A49573AB1A3863970026C0B4 /* JSON */,
+				A495739F1A385E5F0026C0B4 /* Network */,
 			);
-			path = WheelyTestCaseTests;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		A495738F1A385DD80026C0B4 /* Supporting Files */ = {
+		A495739F1A385E5F0026C0B4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A49573901A385DD80026C0B4 /* WheelyTestCaseTests-Info.plist */,
-				A49573911A385DD80026C0B4 /* InfoPlist.strings */,
+				A49573A01A385F630026C0B4 /* Internal */,
+				A49573A41A3860340026C0B4 /* SHKWheelyAPIManager.h */,
+				A49573A51A3860340026C0B4 /* SHKWheelyAPIManager.m */,
 			);
-			name = "Supporting Files";
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A49573A01A385F630026C0B4 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A49573A11A385F730026C0B4 /* SHKRequestOperation.h */,
+				A49573A21A385F730026C0B4 /* SHKRequestOperation.m */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+		A49573A71A38621A0026C0B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A49573C51A3883270026C0B4 /* Story Detail View Controller */,
+				A49573B41A386BE70026C0B4 /* Main View Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A49573AB1A3863970026C0B4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A49573B31A386A780026C0B4 /* Models */,
+				A49573B01A3864B60026C0B4 /* SHKJSONParser.h */,
+				A49573B11A3864B60026C0B4 /* SHKJSONParser.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		A49573B31A386A780026C0B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A49573AD1A3863D90026C0B4 /* SHKWheelyStory.h */,
+				A49573AE1A3863D90026C0B4 /* SHKWheelyStory.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A49573B41A386BE70026C0B4 /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A49573B51A386BF30026C0B4 /* Custom VIew */,
+				A49573A81A3862320026C0B4 /* SHKMainViewController.h */,
+				A49573A91A3862320026C0B4 /* SHKMainViewController.m */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		A49573B51A386BF30026C0B4 /* Custom VIew */ = {
+			isa = PBXGroup;
+			children = (
+				A49573B91A3870D40026C0B4 /* SHKLabel.h */,
+				A49573BA1A3870D40026C0B4 /* SHKLabel.m */,
+				A49573B61A386C170026C0B4 /* SHKStoryTableViewCell.h */,
+				A49573B71A386C170026C0B4 /* SHKStoryTableViewCell.m */,
+			);
+			name = "Custom VIew";
+			sourceTree = "<group>";
+		};
+		A49573BC1A3875360026C0B4 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A49573BD1A3875430026C0B4 /* SVPullToRefresh */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		A49573BD1A3875430026C0B4 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A49573C11A3875430026C0B4 /* UIScrollView+SVPullToRefresh.h */,
+				A49573C21A3875430026C0B4 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		A49573C51A3883270026C0B4 /* Story Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A49573CC1A38CA670026C0B4 /* Custom View */,
+				A49573C61A3883750026C0B4 /* SHKStoryDetailViewController.h */,
+				A49573C71A3883750026C0B4 /* SHKStoryDetailViewController.m */,
+			);
+			name = "Story Detail View Controller";
+			sourceTree = "<group>";
+		};
+		A49573CC1A38CA670026C0B4 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				A49573C91A38C44F0026C0B4 /* SHKSeparatorView.h */,
+				A49573CA1A38C44F0026C0B4 /* SHKSeparatorView.m */,
+			);
+			name = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +265,6 @@
 			productReference = A49573661A385DD80026C0B4 /* WheelyTestCase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A49573861A385DD80026C0B4 /* WheelyTestCaseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A495739B1A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCaseTests" */;
-			buildPhases = (
-				A49573831A385DD80026C0B4 /* Sources */,
-				A49573841A385DD80026C0B4 /* Frameworks */,
-				A49573851A385DD80026C0B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A495738D1A385DD80026C0B4 /* PBXTargetDependency */,
-			);
-			name = WheelyTestCaseTests;
-			productName = WheelyTestCaseTests;
-			productReference = A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +274,6 @@
 				CLASSPREFIX = SHK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alexander Rubin";
-				TargetAttributes = {
-					A49573861A385DD80026C0B4 = {
-						TestTargetID = A49573651A385DD80026C0B4;
-					};
-				};
 			};
 			buildConfigurationList = A49573611A385DD80026C0B4 /* Build configuration list for PBXProject "WheelyTestCase" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +289,6 @@
 			projectRoot = "";
 			targets = (
 				A49573651A385DD80026C0B4 /* WheelyTestCase */,
-				A49573861A385DD80026C0B4 /* WheelyTestCaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,16 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49573821A385DD80026C0B4 /* Images.xcassets in Resources */,
+				A4787B3B1A38E45600506608 /* Launch Screen.xib in Resources */,
 				A49573741A385DD80026C0B4 /* InfoPlist.strings in Resources */,
 				A495737D1A385DD80026C0B4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A49573851A385DD80026C0B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A49573931A385DD80026C0B4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,29 +312,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49573A31A385F730026C0B4 /* SHKRequestOperation.m in Sources */,
+				A49573A61A3860340026C0B4 /* SHKWheelyAPIManager.m in Sources */,
+				A49573AA1A3862330026C0B4 /* SHKMainViewController.m in Sources */,
 				A49573761A385DD80026C0B4 /* main.m in Sources */,
+				A49573B81A386C170026C0B4 /* SHKStoryTableViewCell.m in Sources */,
 				A495737A1A385DD80026C0B4 /* SHKAppDelegate.m in Sources */,
-				A49573801A385DD80026C0B4 /* SHKViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A49573831A385DD80026C0B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A49573951A385DD80026C0B4 /* WheelyTestCaseTests.m in Sources */,
+				A49573C41A3875430026C0B4 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				A49573CB1A38C44F0026C0B4 /* SHKSeparatorView.m in Sources */,
+				A49573AF1A3863D90026C0B4 /* SHKWheelyStory.m in Sources */,
+				A49573B21A3864B60026C0B4 /* SHKJSONParser.m in Sources */,
+				A49573BB1A3870D40026C0B4 /* SHKLabel.m in Sources */,
+				A49573C81A3883750026C0B4 /* SHKStoryDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A495738D1A385DD80026C0B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A49573651A385DD80026C0B4 /* WheelyTestCase */;
-			targetProxy = A495738C1A385DD80026C0B4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A49573721A385DD80026C0B4 /* InfoPlist.strings */ = {
@@ -289,14 +344,6 @@
 				A495737C1A385DD80026C0B4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A49573911A385DD80026C0B4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A49573921A385DD80026C0B4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -380,6 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
 				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,48 +441,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
 				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		A495739C1A385DD80026C0B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WheelyTestCase.app/WheelyTestCase";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WheelyTestCaseTests/WheelyTestCaseTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A495739D1A385DD80026C0B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WheelyTestCase.app/WheelyTestCase";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
-				INFOPLIST_FILE = "WheelyTestCaseTests/WheelyTestCaseTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -457,14 +466,7 @@
 				A495739A1A385DD80026C0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A495739B1A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCaseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A495739C1A385DD80026C0B4 /* Debug */,
-				A495739D1A385DD80026C0B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

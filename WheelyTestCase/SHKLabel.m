@@ -11,7 +11,6 @@
 @implementation SHKLabel
 
 - (void)layoutSubviews {
-
     [super layoutSubviews];
     if (self.numberOfLines == 0) {
         if (self.preferredMaxLayoutWidth != self.frame.size.width) {

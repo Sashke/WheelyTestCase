@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface SHKJSONParser : NSObject
-
+- (NSArray *)parseResponseData:(id)responseData;
 @end

@@ -7,19 +7,17 @@
 //
 
 #import "SHKRequestOperation.h"
-#import "SHKResponseSerializer.h"
-#import "SHKUserInfoFactory.h"
 
 @interface SHKRequestOperation() <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
-@property (nonatomic, strong) NSURLRequest *request;
-@property (nonatomic, strong) NSURLConnection *connection;
-@property (nonatomic, strong) NSMutableData *recievedData;
-@property (nonatomic, strong) id serializedData;
-@property (nonatomic, strong) NSError *error;
-@property (nonatomic, assign) BOOL isExecuting;
-@property (nonatomic, assign) BOOL isConcurrent;
-@property (nonatomic, assign) BOOL isFinished;
-@property (nonatomic, strong) NSPort *port;
+@property (strong, nonatomic) NSURLRequest *request;
+@property (strong, nonatomic) NSURLConnection *connection;
+@property (strong, nonatomic) NSMutableData *recievedData;
+@property (strong, nonatomic) id serializedData;
+@property (strong, nonatomic) NSError *error;
+@property (strong, nonatomic) NSPort *port;
+@property (assign, nonatomic) BOOL isExecuting;
+@property (assign, nonatomic) BOOL isConcurrent;
+@property (assign, nonatomic) BOOL isFinished;
 @end
 
 
@@ -43,6 +41,7 @@
     NSRunLoop *currentRunLoop = [NSRunLoop currentRunLoop];
     [currentRunLoop addPort:self.port forMode:NSDefaultRunLoopMode];
     [self.connection scheduleInRunLoop:currentRunLoop forMode:NSDefaultRunLoopMode];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [self.connection start];
     [currentRunLoop run];
 }
@@ -50,18 +49,18 @@
 - (void)finish {
     NSRunLoop *currentRunLoop = [NSRunLoop currentRunLoop];
     [currentRunLoop removePort:self.port forMode:NSDefaultRunLoopMode];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 #pragma mark - NSOperation
 
--(void)cancel {
+- (void)cancel {
     [super cancel];
     [self finish];
     [self.connection cancel];
     self.isFinished = YES;
     self.isExecuting = NO;
 }
-
 
 - (void)setCompletionBlockWithSucess:(void (^)(id))success
                              failure:(void (^)(NSError *))failure {
@@ -86,7 +85,6 @@
     [self didChangeValueForKey:@"isExecuting"];
 }
 
-
 - (void)setIsFinished:(BOOL)isFinished
 {
     [self willChangeValueForKey:@"isFinished"];
@@ -104,29 +102,14 @@
     [self.recievedData appendData:data];
 }
 
-
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse {
     return cachedResponse;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    if (self.serializer == SHKJsonSerializer) {
-        self.serializedData = [SHKResponseSerializer jsonObjectForData:self.recievedData];
-        if (self.serializedData) {
-            NSArray *errors = [self.serializedData objectForKey:@"errors"];
-            if (errors.count > 0) {
-                NSDictionary *errorDictionary = errors[0];
-                NSInteger errorCode = [[errorDictionary objectForKey:@"code"] integerValue];
-                NSDictionary *userInfo = [SHKUserInfoFactory userInfoForStatusCode:errorCode];
-                NSError *error = [[NSError alloc] initWithDomain:NSPOSIXErrorDomain
-                                                            code:errorCode
-                                                        userInfo:userInfo];
-                self.error = error;
-            }
-        }
-    } else {
-        self.serializedData = [SHKResponseSerializer imageForData:self.recievedData];
-    }
+    self.serializedData = [NSJSONSerialization JSONObjectWithData:self.recievedData
+                                                          options:NSJSONReadingAllowFragments
+                                                            error:nil];
     [self finish];
     self.connection = nil;
     self.isExecuting = NO;
@@ -140,8 +123,5 @@
     self.isExecuting = NO;
     self.isFinished = YES;;
 }
-
-
-
 
 @end

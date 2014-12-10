@@ -8,14 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, SHKResponseSerializers) {
-    SHKJsonSerializer,
-    SHKImageSerializer,
-};
-
 @interface SHKRequestOperation : NSOperation
-
-@property (nonatomic, assign) SHKResponseSerializers serializer;
 
 - (id)initWithRequest:(NSURLRequest *)urlRequest;
 

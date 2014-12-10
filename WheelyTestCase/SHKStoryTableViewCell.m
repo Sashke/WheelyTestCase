@@ -7,28 +7,27 @@
 //
 
 #import "SHKStoryTableViewCell.h"
+#import "SHKLabel.h"
+
+@interface SHKStoryTableViewCell()
+@property (weak, nonatomic) IBOutlet SHKLabel *storyTitleLabel;
+@property (weak, nonatomic) IBOutlet SHKLabel *storyTextLabel;
+@end
 
 @implementation SHKStoryTableViewCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
+- (void)setTitle:(NSString *)title {
+    if (_title != title) {
+        _title = title;
+        self.storyTitleLabel.text = _title;
     }
-    return self;
 }
 
-- (void)awakeFromNib
-{
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setText:(NSString *)text {
+    if (_text != text) {
+        _text = text;
+        self.storyTextLabel.text = _text;
+    }
 }
 
 @end

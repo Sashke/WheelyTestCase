@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		A4787B3A1A38E45600506608 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		A49573661A385DD80026C0B4 /* WheelyTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49573661A385DD80026C0B4 /* Test Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49573691A385DD80026C0B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A495736B1A385DD80026C0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A495736D1A385DD80026C0B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -91,7 +91,7 @@
 		A49573671A385DD80026C0B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A49573661A385DD80026C0B4 /* WheelyTestCase.app */,
+				A49573661A385DD80026C0B4 /* Test Case.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			);
 			name = WheelyTestCase;
 			productName = WheelyTestCase;
-			productReference = A49573661A385DD80026C0B4 /* WheelyTestCase.app */;
+			productReference = A49573661A385DD80026C0B4 /* Test Case.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -428,7 +428,7 @@
 				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
 				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Case";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,7 +442,7 @@
 				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
 				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Case";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

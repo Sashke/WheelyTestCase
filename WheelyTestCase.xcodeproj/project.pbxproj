@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A495736A1A385DD80026C0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573691A385DD80026C0B4 /* Foundation.framework */; };
+		A495736C1A385DD80026C0B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736B1A385DD80026C0B4 /* CoreGraphics.framework */; };
+		A495736E1A385DD80026C0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736D1A385DD80026C0B4 /* UIKit.framework */; };
+		A49573741A385DD80026C0B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A49573721A385DD80026C0B4 /* InfoPlist.strings */; };
+		A49573761A385DD80026C0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573751A385DD80026C0B4 /* main.m */; };
+		A495737A1A385DD80026C0B4 /* SHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573791A385DD80026C0B4 /* SHKAppDelegate.m */; };
+		A495737D1A385DD80026C0B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A495737B1A385DD80026C0B4 /* Main.storyboard */; };
+		A49573801A385DD80026C0B4 /* SHKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A495737F1A385DD80026C0B4 /* SHKViewController.m */; };
+		A49573821A385DD80026C0B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49573811A385DD80026C0B4 /* Images.xcassets */; };
+		A49573891A385DD80026C0B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573881A385DD80026C0B4 /* XCTest.framework */; };
+		A495738A1A385DD80026C0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49573691A385DD80026C0B4 /* Foundation.framework */; };
+		A495738B1A385DD80026C0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A495736D1A385DD80026C0B4 /* UIKit.framework */; };
+		A49573931A385DD80026C0B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A49573911A385DD80026C0B4 /* InfoPlist.strings */; };
+		A49573951A385DD80026C0B4 /* WheelyTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A495738C1A385DD80026C0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A495735E1A385DD80026C0B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A49573651A385DD80026C0B4;
+			remoteInfo = WheelyTestCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A49573661A385DD80026C0B4 /* WheelyTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49573691A385DD80026C0B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A495736B1A385DD80026C0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A495736D1A385DD80026C0B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A49573711A385DD80026C0B4 /* WheelyTestCase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WheelyTestCase-Info.plist"; sourceTree = "<group>"; };
+		A49573731A385DD80026C0B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A49573751A385DD80026C0B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A49573771A385DD80026C0B4 /* WheelyTestCase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WheelyTestCase-Prefix.pch"; sourceTree = "<group>"; };
+		A49573781A385DD80026C0B4 /* SHKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKAppDelegate.h; sourceTree = "<group>"; };
+		A49573791A385DD80026C0B4 /* SHKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKAppDelegate.m; sourceTree = "<group>"; };
+		A495737C1A385DD80026C0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A495737E1A385DD80026C0B4 /* SHKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKViewController.h; sourceTree = "<group>"; };
+		A495737F1A385DD80026C0B4 /* SHKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHKViewController.m; sourceTree = "<group>"; };
+		A49573811A385DD80026C0B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49573881A385DD80026C0B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A49573901A385DD80026C0B4 /* WheelyTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WheelyTestCaseTests-Info.plist"; sourceTree = "<group>"; };
+		A49573921A385DD80026C0B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelyTestCaseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A49573631A385DD80026C0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A495736C1A385DD80026C0B4 /* CoreGraphics.framework in Frameworks */,
+				A495736E1A385DD80026C0B4 /* UIKit.framework in Frameworks */,
+				A495736A1A385DD80026C0B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49573841A385DD80026C0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49573891A385DD80026C0B4 /* XCTest.framework in Frameworks */,
+				A495738B1A385DD80026C0B4 /* UIKit.framework in Frameworks */,
+				A495738A1A385DD80026C0B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A495735D1A385DD80026C0B4 = {
+			isa = PBXGroup;
+			children = (
+				A495736F1A385DD80026C0B4 /* WheelyTestCase */,
+				A495738E1A385DD80026C0B4 /* WheelyTestCaseTests */,
+				A49573681A385DD80026C0B4 /* Frameworks */,
+				A49573671A385DD80026C0B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49573671A385DD80026C0B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A49573661A385DD80026C0B4 /* WheelyTestCase.app */,
+				A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A49573681A385DD80026C0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49573691A385DD80026C0B4 /* Foundation.framework */,
+				A495736B1A385DD80026C0B4 /* CoreGraphics.framework */,
+				A495736D1A385DD80026C0B4 /* UIKit.framework */,
+				A49573881A385DD80026C0B4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A495736F1A385DD80026C0B4 /* WheelyTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				A49573781A385DD80026C0B4 /* SHKAppDelegate.h */,
+				A49573791A385DD80026C0B4 /* SHKAppDelegate.m */,
+				A495737B1A385DD80026C0B4 /* Main.storyboard */,
+				A495737E1A385DD80026C0B4 /* SHKViewController.h */,
+				A495737F1A385DD80026C0B4 /* SHKViewController.m */,
+				A49573811A385DD80026C0B4 /* Images.xcassets */,
+				A49573701A385DD80026C0B4 /* Supporting Files */,
+			);
+			path = WheelyTestCase;
+			sourceTree = "<group>";
+		};
+		A49573701A385DD80026C0B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A49573711A385DD80026C0B4 /* WheelyTestCase-Info.plist */,
+				A49573721A385DD80026C0B4 /* InfoPlist.strings */,
+				A49573751A385DD80026C0B4 /* main.m */,
+				A49573771A385DD80026C0B4 /* WheelyTestCase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A495738E1A385DD80026C0B4 /* WheelyTestCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				A49573941A385DD80026C0B4 /* WheelyTestCaseTests.m */,
+				A495738F1A385DD80026C0B4 /* Supporting Files */,
+			);
+			path = WheelyTestCaseTests;
+			sourceTree = "<group>";
+		};
+		A495738F1A385DD80026C0B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A49573901A385DD80026C0B4 /* WheelyTestCaseTests-Info.plist */,
+				A49573911A385DD80026C0B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A49573651A385DD80026C0B4 /* WheelyTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49573981A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCase" */;
+			buildPhases = (
+				A49573621A385DD80026C0B4 /* Sources */,
+				A49573631A385DD80026C0B4 /* Frameworks */,
+				A49573641A385DD80026C0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheelyTestCase;
+			productName = WheelyTestCase;
+			productReference = A49573661A385DD80026C0B4 /* WheelyTestCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A49573861A385DD80026C0B4 /* WheelyTestCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A495739B1A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCaseTests" */;
+			buildPhases = (
+				A49573831A385DD80026C0B4 /* Sources */,
+				A49573841A385DD80026C0B4 /* Frameworks */,
+				A49573851A385DD80026C0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A495738D1A385DD80026C0B4 /* PBXTargetDependency */,
+			);
+			name = WheelyTestCaseTests;
+			productName = WheelyTestCaseTests;
+			productReference = A49573871A385DD80026C0B4 /* WheelyTestCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A495735E1A385DD80026C0B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SHK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alexander Rubin";
+				TargetAttributes = {
+					A49573861A385DD80026C0B4 = {
+						TestTargetID = A49573651A385DD80026C0B4;
+					};
+				};
+			};
+			buildConfigurationList = A49573611A385DD80026C0B4 /* Build configuration list for PBXProject "WheelyTestCase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A495735D1A385DD80026C0B4;
+			productRefGroup = A49573671A385DD80026C0B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A49573651A385DD80026C0B4 /* WheelyTestCase */,
+				A49573861A385DD80026C0B4 /* WheelyTestCaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A49573641A385DD80026C0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49573821A385DD80026C0B4 /* Images.xcassets in Resources */,
+				A49573741A385DD80026C0B4 /* InfoPlist.strings in Resources */,
+				A495737D1A385DD80026C0B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49573851A385DD80026C0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49573931A385DD80026C0B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A49573621A385DD80026C0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49573761A385DD80026C0B4 /* main.m in Sources */,
+				A495737A1A385DD80026C0B4 /* SHKAppDelegate.m in Sources */,
+				A49573801A385DD80026C0B4 /* SHKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A49573831A385DD80026C0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49573951A385DD80026C0B4 /* WheelyTestCaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A495738D1A385DD80026C0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A49573651A385DD80026C0B4 /* WheelyTestCase */;
+			targetProxy = A495738C1A385DD80026C0B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A49573721A385DD80026C0B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A49573731A385DD80026C0B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A495737B1A385DD80026C0B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A495737C1A385DD80026C0B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A49573911A385DD80026C0B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A49573921A385DD80026C0B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A49573961A385DD80026C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A49573971A385DD80026C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A49573991A385DD80026C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
+				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A495739A1A385DD80026C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
+				INFOPLIST_FILE = "WheelyTestCase/WheelyTestCase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A495739C1A385DD80026C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WheelyTestCase.app/WheelyTestCase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WheelyTestCaseTests/WheelyTestCaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A495739D1A385DD80026C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WheelyTestCase.app/WheelyTestCase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WheelyTestCase/WheelyTestCase-Prefix.pch";
+				INFOPLIST_FILE = "WheelyTestCaseTests/WheelyTestCaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A49573611A385DD80026C0B4 /* Build configuration list for PBXProject "WheelyTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49573961A385DD80026C0B4 /* Debug */,
+				A49573971A385DD80026C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49573981A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49573991A385DD80026C0B4 /* Debug */,
+				A495739A1A385DD80026C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A495739B1A385DD80026C0B4 /* Build configuration list for PBXNativeTarget "WheelyTestCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A495739C1A385DD80026C0B4 /* Debug */,
+				A495739D1A385DD80026C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A495735E1A385DD80026C0B4 /* Project object */;
+}
